@@ -1,0 +1,14 @@
+<launch>
+    <arg name="manager"     default="swarm_manager"/>
+    <arg name="viz"     default="false"/>
+    <arg name="config_file" default="$(find loop_fusion)/../config/t265/fisheye_cpu_165_55_bak.yaml" />
+    <arg name="output" default="screen" />
+
+    <node pkg="loop_fusion" type="loop_fusion_node" name="vins_loop_fusion"  output="$(arg output)">
+
+        <param name="config_file" type="string" value="$(arg config_file)"/>
+
+    </node>
+
+    <include file="$(find vins)/launch/vins_rviz.launch" if="$(arg viz)" />
+</launch>
