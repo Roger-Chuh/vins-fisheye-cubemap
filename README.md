@@ -1,5 +1,5 @@
 # FYI
-This code is very different from HKUST's original "VINS-Fisheye" verion, it now can only run on datasets recorded by intel realsense T265, EUROC or TUM dataset are not supported under this version. I have provided a sample ros bag down below, you can also create your own dataset with a calibrated T265.
+This code is very different from HKUST's original "VINS-Fisheye" verion, it now can only run on datasets recorded by intel realsense T265. EUROC or TUM dataset are not supported under this version. I have provided a sample ros bag down below, you can also create your own dataset with a calibrated T265.
 
 The code was compiled under 18.04 Melodic.
 
