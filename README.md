@@ -12,8 +12,9 @@ in the terminal, type (change the paths accordingly)
 ```
 references:
 1. https://github.com/HKUST-Aerial-Robotics/VINS-Fisheye
-2. https://github.com/HeYijia/PL-VIO
-3. https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping
+2. https://github.com/nkwangyh/CubemapSLAM
+3. https://github.com/HeYijia/PL-VIO
+4. https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping
 
 sample ros bag:
 链接：https://pan.baidu.com/s/1efJd0ndCIxRMVlrKQceFaw
