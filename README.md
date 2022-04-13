@@ -4,12 +4,12 @@ This code is modified from HKUST's original "VINS-Fisheye" verion, it now can on
 The code was compiled under 18.04 Melodic.
 
 in the terminal, type (change the paths accordingly)
-
+```bash
 1. roslaunch vins fisheye_node.launch config_file:=/home/roger/vins-fisheye2/src/VINS-Fisheye/config/t265/t265_cpu_165_55_bak.yaml
-2. (optional if you want to enable loop closure)rosrun loop_fusion loop_fusion_node /home/roger/vins-fisheye2/src/VINS-Fisheye/config/t265/t265_cpu_165_55_bak.yaml
+2. rosrun loop_fusion loop_fusion_node /home/roger/vins-fisheye2/src/VINS-Fisheye/config/t265/t265_cpu_165_55_bak.yaml  (optional with loop closure)
 3. roslaunch vins vins_rviz.launch
-4. rosbag play vio6.bag --clock -r 0.5 (if the pose drifts unexpectedly, lower the play rate of the bag)
-
+4. rosbag play vio6.bag --clock -r 0.5  (if the pose drifts unexpectedly, lower the play rate of the bag)
+```
 references:
 1. https://github.com/HKUST-Aerial-Robotics/VINS-Fisheye
 2. https://github.com/HeYijia/PL-VIO
