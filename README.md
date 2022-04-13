@@ -10,11 +10,26 @@ in the terminal, type (change the paths accordingly)
 3. roslaunch vins vins_rviz.launch
 4. rosbag play vio6.bag --clock -r 0.5 (if the pose drifts unexpectedly, lower the play rate of the bag)
 
+references:
+1. https://github.com/HKUST-Aerial-Robotics/VINS-Fisheye
+2. https://github.com/HeYijia/PL-VIO
+3. https://github.com/HKUST-Aerial-Robotics/DenseSurfelMapping
+
+sample ros bag:
 链接：https://pan.baidu.com/s/1efJd0ndCIxRMVlrKQceFaw
 提取码：qm2v
 
 
-![Image of DEMO](support_files/thumbnail_git.png)
+# Some Online Demos
+
+![Image of DEMO1](support_files/thumbnail_git.png)
+*https://www.bilibili.com/video/BV1wT4y1C7hy/ (underground parking lot under highly dynamic illumination changes, total travelled length 500m, final drift 3m)*
+
+![Image of DEMO2](support_files/thumbnail_line.png)
+*https://www.bilibili.com/video/BV1wS4y1F7Wf/ (indoor localization with additional line features)*
+
+![Image of DEMO3](support_files/thumbnail_dense.png)
+*https://www.bilibili.com/video/BV13Y411G7jg/ (dense mapping with loop correction)*
 
 
 
