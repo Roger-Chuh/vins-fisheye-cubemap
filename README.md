@@ -1,3 +1,34 @@
+# FYI
+This code is very different from HKUST's original "VINS-Fisheye" verion, it now can only run on datasets recorded by intel realsense T265, EUROC or TUM dataset are not supported under this version. I have provided a sample ros bag down below, you can also create your own dataset with a calibrated T265.
+
+The code was compiled under 18.04 Melodic.
+
+in the terminal, type (change the paths accordingly)
+
+1. roslaunch vins fisheye_node.launch config_file:=/home/roger/vins-fisheye2/src/VINS-Fisheye/config/t265/t265_cpu_165_55_bak.yaml
+2. (optional if you want to enable loop closure)rosrun loop_fusion loop_fusion_node /home/roger/vins-fisheye2/src/VINS-Fisheye/config/t265/t265_cpu_165_55_bak.yaml
+3. roslaunch vins vins_rviz.launch
+4. rosbag play vio6.bag --clock -r 0.5 (if the pose drifts unexpectedly, lower the play rate of the bag)
+
+链接：https://pan.baidu.com/s/1efJd0ndCIxRMVlrKQceFaw
+提取码：qm2v
+
+
+![Image of DEMO](support_files/thumbnail_git.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # VINS-Fisheye
 This repository is a Fisheye version of [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion) with GPU and Visionworks acceleration. It can run on Nvidia TX2 in real-time, also provide depth estimation based on fisheye. This project stands as a part of __[Omni-swarm](https://arxiv.org/abs/2103.04131): A Decentralized Omnidirectional Visual-Inertial-UWB State Estimation System for Aerial Swarm__. You may use it alone on any type of robot or as a part of Omni-swarm for swarm robots.
 
