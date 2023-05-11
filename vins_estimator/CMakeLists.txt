@@ -1,9 +1,4 @@
 #test
-#main
-#main
-#main
-#main 1
-#main 2
 #test 1
 #test 2
 #test 3
