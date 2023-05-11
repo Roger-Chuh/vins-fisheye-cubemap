@@ -5,6 +5,7 @@
 #main 1
 #main 2
 #test 1
+#test 2
 cmake_minimum_required(VERSION 2.8.3)
 project(vins)
 
